@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RoomBox</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="logIn">Log In</string>
+    <string name="save">Save</string>
+    <string name="apartmentName">Apartment Name</string>
+    <string name="apartmentAdress">Apartment Adress</string>
+    <string name="roomsNum">Number Of Rooms</string>
+    <string name="manageRoomApt">Manage Rooms</string>
+</resources>

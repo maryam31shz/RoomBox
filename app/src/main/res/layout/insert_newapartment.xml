@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="20"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/apartmentNameTextview"
+        android:layout_width="0dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:text="@string/apartmentName"
+        android:layout_weight="5" />
+
+        <EditText
+            android:id="@+id/apartmenttNameEdittext"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/apartmentName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_weight="15"
+            android:layout_width="0dp" />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/roomsNumTextview"
+            android:layout_width="0dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:text="@string/roomsNum"
+            android:layout_weight="5" />
+
+        <EditText
+            android:id="@+id/roomsNumEdittext"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:hint="@string/roomsNum"
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/adressTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/apartmentAdress"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="5" />
+
+        <EditText
+            android:id="@+id/adressEdittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:hint="@string/apartmentAdress"
+            android:layout_weight="15" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_gravity="center" />
+</LinearLayout>
