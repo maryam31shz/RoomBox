@@ -1,6 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="130"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="50"
+            android:text="@string/num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="50"
+            android:id="@+id/roomNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
 
-</android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="50"
+            android:text="@string/tenantID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_weight="50"
+            android:id="@+id/tenantId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="50"
+                android:text="@string/waitingForRent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+            <CheckBox
+                android:id="@+id/goforrentCheckBox"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="50"
+                android:text="@string/remainingCharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:layout_weight="50"
+                android:id="@+id/remainingCharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="50"
+                android:text="@string/setCharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+            <EditText
+                android:layout_weight="50"
+                android:id="@+id/setChargeManually"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="50"
+                android:text="@string/numberOfBedrooms"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_weight="50"
+                android:id="@+id/numberOfBedrooms"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="50"
+                android:text="@string/rentFee"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_weight="50"
+                android:id="@+id/rentFee"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="50"
+                android:text="@string/deposit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_weight="50"
+                android:id="@+id/deposit"
+                android:layout_width="0dp"
+                android:inputType="number"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="100"
+                android:text="@string/cancel"
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="100"
+                android:text="@string/save"
+                android:id="@+id/saveBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="100"
+                android:text="@string/setTenantManually"
+                android:id="@+id/setTenantManuallyBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <Button
+                android:layout_weight="100"
+                android:text="@string/terminateRent"
+                android:layout_width="0dp"
+                android:id="@+id/terminateRentBtn"
+                android:clickable="false"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</FrameLayout>

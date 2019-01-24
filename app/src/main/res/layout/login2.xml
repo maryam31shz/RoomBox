@@ -73,6 +73,15 @@
             android:text="@string/logIn"
             android:textColor="#ffffff"
             android:textSize="18dp" />
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_marginTop="25dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/signUp"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
 
 
     </LinearLayout>

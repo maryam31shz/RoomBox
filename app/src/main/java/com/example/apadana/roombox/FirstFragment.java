@@ -12,8 +12,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
 /**
@@ -43,11 +41,7 @@ public class FirstFragment extends Fragment {
 //    @BindView(R.id.txtView)
 //    TextView showFrag;
 
-    @BindView(R.id.myRooms)
-    CardView myRooms;
 
-    @BindView(R.id.myApartments)
-    CardView myApartments;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,8 +54,8 @@ public class FirstFragment extends Fragment {
 
         // Inflate the layout for this fragment
 
-        View view = inflater.inflate(R.layout.fragment_first, container, false);
-        ButterKnife.bind(this, view);
+        View view = inflater.inflate(R.layout.basefragment, container, false);
+
         return view;
     }
 
@@ -76,13 +70,13 @@ public class FirstFragment extends Fragment {
 //            }
 //        });
 
-        myRooms.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myRooms = new Intent(getActivity(),manageMyRooms.class);
-                startActivity(myRooms);
-            }
-        });
+//        myRooms.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myRooms = new Intent(getActivity(),manageMyRooms.class);
+//                startActivity(myRooms);
+//            }
+//        });
 
 
     }

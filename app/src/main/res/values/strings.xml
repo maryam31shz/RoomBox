@@ -11,4 +11,25 @@
     <string name="apartmentAdress">Apartment Adress</string>
     <string name="roomsNum">Number Of Rooms</string>
     <string name="manageRoomApt">Manage Rooms</string>
+    <string name="num">Room Number</string>
+    <string name="tenantID">Tenant ID</string>
+    <string name="waitingForRent">Do you want to send this room for rent?</string>
+    <string name="remainingCharge">Remaining Charge</string>
+    <string name="setCharge">Set Charge Manually For This Room</string>
+    <string name="terminateRent">Terminate Renting</string>
+    <string name="setTenantManually">Set Tenant Manually</string>
+    <string name="setChargeForAll">Set Charge for All Rooms</string>
+    <string name="costs">See All Costs</string>
+    <string name="seeTransaction">See All Transactions</string>
+    <string name="notifications">Notifications</string>
+    <string name="sendMsg">Send Message To This Room</string>
+    <string name="cancel">Cancel</string>
+    <string name="chargeAmount">Charge Amount for apartment</string>
+    <string name="submit">Submit</string>
+    <string name="deadline">Dead Line</string>
+    <string name="signUp">Sign Up</string>
+    <string name="insertRoomManually">I have a room Code</string>
+    <string name="numberOfBedrooms">Number Of Bedrooms</string>
+    <string name="deposit">Deposit</string>
+    <string name="rentFee">Rent Fee</string>
 </resources>

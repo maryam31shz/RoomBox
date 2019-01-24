@@ -25,30 +25,94 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/menues"
+        android:weightSum="90"
+        android:layout_below="@id/gridContainer"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:weightSum="60"
         android:layout_below="@id/gridContainer"
         android:orientation="horizontal"
         >
         <Button
+            android:layout_weight="20"
             android:id="@+id/manageRoomApt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:text="@string/manageRoomApt"
             />
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hello"
+            android:layout_weight="20"
+            android:id="@+id/setChargeForAllBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/setChargeForAll"
             />
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hello"
+            android:layout_weight="20"
+            android:id="@+id/costsBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/costs"
             />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hello"
-            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:weightSum="60"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_weight="20"
+                android:id="@+id/seeTransactionsBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/seeTransaction"
+                />
+            <Button
+                android:layout_weight="20"
+                android:id="@+id/notificationBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/notifications"
+                />
+            <Button
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="hello"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:weightSum="60"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/manageRoomApt"
+                />
+            <Button
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="hello"
+                />
+            <Button
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="hello"
+                />
+        </LinearLayout>
     </LinearLayout>
 
 

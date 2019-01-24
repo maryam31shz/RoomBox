@@ -1,0 +1,10 @@
+BEGIN TRANSACTION;
+INSERT INTO `user` (ID,Name,Email,Password,BankNumber,PhoneNumber,car) VALUES (1,'maryam','mshz','123',222,203520,1);
+INSERT INTO `user` (ID,Name,Email,Password,BankNumber,PhoneNumber,car) VALUES (2,'reza','nmt','1',133345364,366555,1);
+INSERT INTO `room` (Id,ApartmentId,ChargeId,RentalPrice,ZipCode,Likes,NumberOfBedrooms,RoomNumber,sendForRent,Deposit) VALUES (1,2,NULL,100,'455gg',0,3,3,1,10000);
+INSERT INTO `room` (Id,ApartmentId,ChargeId,RentalPrice,ZipCode,Likes,NumberOfBedrooms,RoomNumber,sendForRent,Deposit) VALUES (2,1,NULL,250,'2026',0,4,2,1,15000);
+INSERT INTO `apartment` (Id,Name,ManagerId,Adress,NumberOfRooms) VALUES (1,'sabz',2,'dfghjkjhgf',5);
+INSERT INTO `apartment` (Id,Name,ManagerId,Adress,NumberOfRooms) VALUES (2,'zard',1,'abcdss',3);
+INSERT INTO `Lease` (Id,TenantId,RoomID,Deposit,StartDate,EndDate,RentFee) VALUES (1,1,2,0.0,'2012-10-02','0',150);
+INSERT INTO `Lease` (Id,TenantId,RoomID,Deposit,StartDate,EndDate,RentFee) VALUES (2,1,1,10000.0,'2015-11-12','2017-11-12',200);
+COMMIT;
